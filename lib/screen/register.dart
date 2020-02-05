@@ -95,7 +95,6 @@ class _RegisterState extends State<Register> {
                                 style: TextStyle(color: Color(0xFF000000)),
                                 cursorColor: Color(0xFF9b9b9b),
                                 keyboardType: TextInputType.text,
-                                obscureText: true,
                                 decoration: InputDecoration(
                                   prefixIcon: Icon(
                                     Icons.insert_emoticon,
@@ -119,7 +118,6 @@ class _RegisterState extends State<Register> {
                                 style: TextStyle(color: Color(0xFF000000)),
                                 cursorColor: Color(0xFF9b9b9b),
                                 keyboardType: TextInputType.text,
-                                obscureText: true,
                                 decoration: InputDecoration(
                                   prefixIcon: Icon(
                                     Icons.phone,
@@ -233,7 +231,7 @@ class _RegisterState extends State<Register> {
     });
     var data = {
       'email' : email,
-      'password' : password,
+      'password': password,
       'phone': phone,
       'fname': fname,
       'lname': lname
