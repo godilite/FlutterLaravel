@@ -60,11 +60,11 @@ class _RegisterState extends State<Register> {
                                       fontSize: 15,
                                       fontWeight: FontWeight.normal),
                                 ),
-                                validator: (email) {
-                                  if (email.isEmpty) {
+                                validator: (emailValue) {
+                                  if (emailValue.isEmpty) {
                                     return 'Please enter email';
                                   }
-                                  this.email = email;
+                                  email = emailValue;
                                   return null;
                                 },
                               ),
@@ -83,11 +83,11 @@ class _RegisterState extends State<Register> {
                                       fontSize: 15,
                                       fontWeight: FontWeight.normal),
                                 ),
-                                validator: (fname) {
-                                  if (fname.isEmpty) {
+                                validator: (firstname) {
+                                  if (firstname.isEmpty) {
                                     return 'Please enter your first name';
                                   }
-                                  this.fname = fname;
+                                  fname = firstname;
                                   return null;
                                 },
                               ),
@@ -106,11 +106,11 @@ class _RegisterState extends State<Register> {
                                       fontSize: 15,
                                       fontWeight: FontWeight.normal),
                                 ),
-                                validator: (lname) {
-                                  if (lname.isEmpty) {
+                                validator: (lastname) {
+                                  if (lastname.isEmpty) {
                                     return 'Please enter your last name';
                                   }
-                                  this.lname = lname;
+                                  lname = lastname;
                                   return null;
                                 },
                               ),
@@ -129,11 +129,11 @@ class _RegisterState extends State<Register> {
                                       fontSize: 15,
                                       fontWeight: FontWeight.normal),
                                 ),
-                                validator: (phone) {
-                                  if (phone.isEmpty) {
+                                validator: (phonenumber) {
+                                  if (phonenumber.isEmpty) {
                                     return 'Please enter phone number';
                                   }
-                                  this.phone = phone;
+                                  phone = phonenumber;
                                   return null;
                                 },
                               ),
@@ -153,11 +153,11 @@ class _RegisterState extends State<Register> {
                                       fontSize: 15,
                                       fontWeight: FontWeight.normal),
                                 ),
-                                validator: (password) {
-                                  if (password.isEmpty) {
+                                validator: (passwordValue) {
+                                  if (passwordValue.isEmpty) {
                                     return 'Please enter some text';
                                   }
-                                  this.password = password;
+                                  password = passwordValue;
                                   return null;
                                 },
                               ),

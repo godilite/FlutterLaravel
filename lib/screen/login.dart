@@ -71,11 +71,11 @@ class _LoginState extends State<Login> {
                                         fontSize: 15,
                                         fontWeight: FontWeight.normal),
                                   ),
-                                  validator: (email) {
-                                    if (email.isEmpty) {
+                                  validator: (emailValue) {
+                                    if (emailValue.isEmpty) {
                                       return 'Please enter email';
                                     }
-                                    this.email = email;
+                                    email = emailValue;
                                     return null;
                                   },
                                 ),
@@ -95,11 +95,11 @@ class _LoginState extends State<Login> {
                                         fontSize: 15,
                                         fontWeight: FontWeight.normal),
                                   ),
-                                  validator: (password) {
-                                    if (password.isEmpty) {
+                                  validator: (passwordValue) {
+                                    if (passwordValue.isEmpty) {
                                       return 'Please enter some text';
                                     }
-                                    this.password = password;
+                                    password = passwordValue;
                                     return null;
                                   },
                                 ),
